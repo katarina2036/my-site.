@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фельцан Екатерина — личная страница</title>
+    <style>
+        /* ===== Базовые настройки ===== */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0d0d0d;
+            color: #e0e0e0;
+            line-height: 1.7;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* ===== Шапка ===== */
+        header {
+            padding: 3rem 1.5rem 2rem;
+            text-align: center;
+            border-bottom: 1px solid #222;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            color: #888;
+            font-size: 1rem;
+            font-style: italic;
+        }
+
+        /* ===== Основной контент ===== */
+        main {
+            flex: 1;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+            width: 100%;
+        }
+
+        section {
+            margin-bottom: 2.5rem;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            color: #ffffff;
+            margin-bottom: 1rem;
+            padding-bottom: 0.4rem;
+            border-bottom: 1px solid #2a2a2a;
+            font-weight: 600;
+        }
+
+        p {
+            color: #b0b0b0;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            color: #b0b0b0;
+            padding: 0.4rem 0;
+            padding-left: 1.4rem;
+            position: relative;
+        }
+
+        ul li::before {
+            content: "—";
+            position: absolute;
+            left: 0;
+            color: #555;
+        }
+
+        a {
+            color: #e0e0e0;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            transition: color 0.25s;
+        }
+
+        a:hover {
+            color: #ffffff;
+        }
+
+        /* ===== Футер ===== */
+        footer.site-footer {
+            text-align: center;
+            padding: 1.8rem 1.5rem;
+            border-top: 1px solid #222;
+            color: #666;
+            font-size: 0.85rem;
+        }
+
+        footer.site-footer p:first-child {
+            color: #999;
+            font-weight: 600;
+        }
+
+        footer.site-footer p:last-child {
+            font-size: 0.75rem;
+            color: #444;
+            margin-top: 0.3rem;
+        }
+
+        /* ===== Адаптивность ===== */
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.5rem; }
+            header { padding: 2rem 1rem 1.5rem; }
+            main { padding: 2rem 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Фельцан Екатерина</h1>
+        <p>Личная страница</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Обо мне</h2>
+            <p>Я учусь в Речном училище Им.И.П.Кулибина на 3 курсе. Группа 31-ОИБ.Являюсь заместителем старшины.Работаю в SPAR.Есть кот Тео, полное имя Теодор Нотт. В свободное время люблю читать,хотя свободного времени у меня не очень много.</p>
+        </section>
+
+        <section>
+            <h2>Чем я занимаюсь?</h2>
+            <ul>
+                <li>Учусь 1</li>
+                <li>Работаю 2</li>
+                <li>Пытаюсь жить эту жизнь 3</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Контакты</h2>
+            <p>Связаться со мной можно, но не нужно. Я сама с вами свяжусь.</a></p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Фельцан Екатерина. Все права защищены.</p>
+        <p>Личная страница. Материалы сайта принадлежат автору.</p>
+    </footer>
+
+</body>
+</html>
